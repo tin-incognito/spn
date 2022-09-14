@@ -16,6 +16,10 @@ func NewMsgUpdateCoordinatorAddress(address, newAddress string) *MsgUpdateCoordi
 	}
 }
 
+func (msg *MsgUpdateCoordinatorAddress) IsPrivacy() bool {
+	return false
+}
+
 func (msg *MsgUpdateCoordinatorAddress) Route() string {
 	return RouterKey
 }

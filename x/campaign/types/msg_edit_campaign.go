@@ -20,6 +20,8 @@ func NewMsgEditCampaign(coordinator string, campaignID uint64, name string, meta
 	}
 }
 
+func (msg *MsgEditCampaign) IsPrivacy() bool { return false }
+
 func (msg *MsgEditCampaign) Route() string {
 	return RouterKey
 }

@@ -29,6 +29,8 @@ func NewMsgUpdateLaunchInformation(
 	}
 }
 
+func (msg *MsgUpdateLaunchInformation) IsPrivacy() bool { return false }
+
 func (msg *MsgUpdateLaunchInformation) Route() string {
 	return RouterKey
 }

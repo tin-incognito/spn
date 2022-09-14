@@ -18,6 +18,8 @@ func NewMsgSettleRequest(settler string, launchID uint64, requestID uint64, appr
 	}
 }
 
+func (msg *MsgSettleRequest) IsPrivacy() bool { return false }
+
 func (msg *MsgSettleRequest) Route() string {
 	return RouterKey
 }

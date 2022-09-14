@@ -20,6 +20,10 @@ func NewMsgUpdateCoordinatorDescription(address, identity, website, details stri
 	}
 }
 
+func (msg *MsgUpdateCoordinatorDescription) IsPrivacy() bool {
+	return false
+}
+
 func (msg *MsgUpdateCoordinatorDescription) Route() string {
 	return RouterKey
 }

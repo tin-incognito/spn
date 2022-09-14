@@ -27,6 +27,8 @@ func NewMsgInitializeMainnet(
 	}
 }
 
+func (msg *MsgInitializeMainnet) IsPrivacy() bool { return false }
+
 func (msg *MsgInitializeMainnet) Route() string {
 	return RouterKey
 }

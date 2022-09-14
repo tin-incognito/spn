@@ -21,6 +21,8 @@ func NewMsgUpdateSpecialAllocations(
 	}
 }
 
+func (msg *MsgUpdateSpecialAllocations) IsPrivacy() bool { return false }
+
 func (msg *MsgUpdateSpecialAllocations) Route() string {
 	return RouterKey
 }

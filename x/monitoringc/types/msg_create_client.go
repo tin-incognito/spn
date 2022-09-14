@@ -29,6 +29,10 @@ func NewMsgCreateClient(
 	}
 }
 
+func (msg *MsgCreateClient) IsPrivacy() bool {
+	return false
+}
+
 func (msg *MsgCreateClient) Route() string {
 	return RouterKey
 }

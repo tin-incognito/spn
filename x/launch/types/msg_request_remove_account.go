@@ -17,6 +17,8 @@ func NewMsgRequestRemoveAccount(creator string, launchID uint64, address string)
 	}
 }
 
+func (msg *MsgRequestRemoveAccount) IsPrivacy() bool { return false }
+
 func (msg *MsgRequestRemoveAccount) Route() string {
 	return RouterKey
 }

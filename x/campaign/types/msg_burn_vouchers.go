@@ -17,6 +17,8 @@ func NewMsgBurnVouchers(sender string, campaignID uint64, vouchers sdk.Coins) *M
 	}
 }
 
+func (msg *MsgBurnVouchers) IsPrivacy() bool { return false }
+
 func (msg *MsgBurnVouchers) Route() string {
 	return RouterKey
 }

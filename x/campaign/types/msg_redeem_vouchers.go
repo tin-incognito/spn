@@ -18,6 +18,8 @@ func NewMsgRedeemVouchers(sender, account string, campaignID uint64, vouchers sd
 	}
 }
 
+func (msg *MsgRedeemVouchers) IsPrivacy() bool { return false }
+
 func (msg *MsgRedeemVouchers) Route() string {
 	return RouterKey
 }

@@ -15,6 +15,10 @@ func NewMsgDisableCoordinator(address string) *MsgDisableCoordinator {
 	}
 }
 
+func (msg *MsgDisableCoordinator) IsPrivacy() bool {
+	return false
+}
+
 func (msg *MsgDisableCoordinator) Route() string {
 	return RouterKey
 }

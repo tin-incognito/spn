@@ -19,6 +19,10 @@ func NewMsgSAddValidatorOperatorAddress(
 	}
 }
 
+func (msg *MsgAddValidatorOperatorAddress) IsPrivacy() bool {
+	return false
+}
+
 func (msg *MsgAddValidatorOperatorAddress) Route() string {
 	return RouterKey
 }

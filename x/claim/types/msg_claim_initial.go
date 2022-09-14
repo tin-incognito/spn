@@ -15,6 +15,10 @@ func NewMsgClaimInitial(claimer string) *MsgClaimInitial {
 	}
 }
 
+func (msg *MsgClaimInitial) IsPrivacy() bool {
+	return false
+}
+
 func (msg *MsgClaimInitial) Route() string {
 	return RouterKey
 }

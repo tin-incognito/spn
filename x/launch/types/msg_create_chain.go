@@ -36,6 +36,8 @@ func NewMsgCreateChain(
 	}
 }
 
+func (msg *MsgCreateChain) IsPrivacy() bool { return false }
+
 func (msg *MsgCreateChain) Route() string {
 	return RouterKey
 }

@@ -29,6 +29,8 @@ func NewMsgRequestAddValidator(
 	}
 }
 
+func (msg *MsgRequestAddValidator) IsPrivacy() bool { return false }
+
 func (msg *MsgRequestAddValidator) Route() string {
 	return RouterKey
 }

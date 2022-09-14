@@ -29,6 +29,10 @@ func NewMsgUpdateValidatorDescription(
 	}
 }
 
+func (msg *MsgUpdateValidatorDescription) IsPrivacy() bool {
+	return false
+}
+
 func (msg *MsgUpdateValidatorDescription) Route() string {
 	return RouterKey
 }

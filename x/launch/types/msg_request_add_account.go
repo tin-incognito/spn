@@ -23,6 +23,8 @@ func NewMsgRequestAddAccount(
 	}
 }
 
+func (msg *MsgRequestAddAccount) IsPrivacy() bool { return false }
+
 func (msg *MsgRequestAddAccount) Route() string {
 	return RouterKey
 }

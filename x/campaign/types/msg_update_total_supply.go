@@ -17,6 +17,8 @@ func NewMsgUpdateTotalSupply(coordinator string, campaignID uint64, totalSupplyU
 	}
 }
 
+func (msg *MsgUpdateTotalSupply) IsPrivacy() bool { return false }
+
 func (msg *MsgUpdateTotalSupply) Route() string {
 	return RouterKey
 }

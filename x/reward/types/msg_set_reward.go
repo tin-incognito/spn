@@ -18,6 +18,8 @@ func NewMsgSetRewards(provider string, launchID uint64, lastRewardHeight int64, 
 	}
 }
 
+func (msg *MsgSetRewards) IsPrivacy() bool { return false }
+
 func (msg *MsgSetRewards) Route() string {
 	return RouterKey
 }

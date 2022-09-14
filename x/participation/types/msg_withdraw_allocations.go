@@ -16,6 +16,10 @@ func NewMsgWithdrawAllocations(participant string, auctionID uint64) *MsgWithdra
 	}
 }
 
+func (msg *MsgWithdrawAllocations) IsPrivacy() bool {
+	return false
+}
+
 func (msg *MsgWithdrawAllocations) Route() string {
 	return RouterKey
 }

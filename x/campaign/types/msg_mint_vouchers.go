@@ -17,6 +17,8 @@ func NewMsgMintVouchers(coordinator string, campaignID uint64, shares Shares) *M
 	}
 }
 
+func (msg *MsgMintVouchers) IsPrivacy() bool { return false }
+
 func (msg *MsgMintVouchers) Route() string {
 	return RouterKey
 }

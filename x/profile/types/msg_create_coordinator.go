@@ -20,6 +20,10 @@ func NewMsgCreateCoordinator(address, identity, website, details string) *MsgCre
 	}
 }
 
+func (msg *MsgCreateCoordinator) IsPrivacy() bool {
+	return false
+}
+
 func (msg *MsgCreateCoordinator) Route() string {
 	return RouterKey
 }

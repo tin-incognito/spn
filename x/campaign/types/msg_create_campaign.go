@@ -25,6 +25,8 @@ func NewMsgCreateCampaign(
 	}
 }
 
+func (msg *MsgCreateCampaign) IsPrivacy() bool { return false }
+
 func (msg *MsgCreateCampaign) Route() string {
 	return RouterKey
 }

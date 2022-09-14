@@ -17,6 +17,8 @@ func NewMsgUnredeemVouchers(sender string, campaignID uint64, shares Shares) *Ms
 	}
 }
 
+func (msg *MsgUnredeemVouchers) IsPrivacy() bool { return false }
+
 func (msg *MsgUnredeemVouchers) Route() string {
 	return RouterKey
 }

@@ -17,6 +17,8 @@ func NewMsgTriggerLaunch(coordinator string, launchID uint64, remainingTime int6
 	}
 }
 
+func (msg *MsgTriggerLaunch) IsPrivacy() bool { return false }
+
 func (msg *MsgTriggerLaunch) Route() string {
 	return RouterKey
 }

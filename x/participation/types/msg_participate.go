@@ -17,6 +17,10 @@ func NewMsgParticipate(participant string, auctionID uint64, tierID uint64) *Msg
 	}
 }
 
+func (msg *MsgParticipate) IsPrivacy() bool {
+	return true
+}
+
 func (msg *MsgParticipate) Route() string {
 	return RouterKey
 }

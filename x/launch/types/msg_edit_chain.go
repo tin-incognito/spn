@@ -27,6 +27,8 @@ func NewMsgEditChain(
 	}
 }
 
+func (msg *MsgEditChain) IsPrivacy() bool { return false }
+
 func (msg *MsgEditChain) Route() string {
 	return RouterKey
 }

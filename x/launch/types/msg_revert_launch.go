@@ -16,6 +16,8 @@ func NewMsgRevertLaunch(coordinator string, launchID uint64) *MsgRevertLaunch {
 	}
 }
 
+func (msg *MsgRevertLaunch) IsPrivacy() bool { return false }
+
 func (msg *MsgRevertLaunch) Route() string {
 	return RouterKey
 }

@@ -17,6 +17,8 @@ func NewMsgRequestRemoveValidator(creator string, launchID uint64, validatorAddr
 	}
 }
 
+func (msg *MsgRequestRemoveValidator) IsPrivacy() bool { return false }
+
 func (msg *MsgRequestRemoveValidator) Route() string {
 	return RouterKey
 }
